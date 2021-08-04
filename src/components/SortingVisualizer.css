@@ -1,0 +1,14 @@
+#graphSection {
+  position: absolute;
+  top: 50vh;
+  height: 300px;
+  margin-left: 50px;
+}
+
+.arrayBar {
+  width: 3px;
+  background-color: pink;
+  display: inline-block;
+  margin: 0 2px;
+  border: 1px solid black;
+}

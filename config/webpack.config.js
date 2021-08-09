@@ -15,7 +15,10 @@ const config = {
   mode: 'development', // tells webpack to use its built-in optimisations according to the mode
   resolve: {
     // instructions on how to resolve modules
-    modules: [path.resolve('node_modules'), 'node_modules'], // tells webpack where to look for node_modules
+    modules: [path.resolve('node_modules'), 'node_modules'],
+    alias: {
+      'path-to-regexp': path.resolve(ROOT_DIRECTORY, 'node_modules', 'react-router', 'node_modules', 'path-to-regexp')
+    }, // tells webpack where to look for node_modules
   },
   performance: {
     // notifies you if assets and entry points exceed a specific file limit

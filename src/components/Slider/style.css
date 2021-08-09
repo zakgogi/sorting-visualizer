@@ -1,5 +1,6 @@
-.slidecontainer {
-  width: 100%; /* Width of the outside container */
+.sliderContainer {
+  width: 10vw; /* Width of the outside container */
+  display: inline-block;
 }
 
 /* The slider itself */
@@ -35,4 +36,8 @@
   height: 25px; /* Slider handle height */
   background: #04aa6d; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+
+p {
+  text-align: center;
 }

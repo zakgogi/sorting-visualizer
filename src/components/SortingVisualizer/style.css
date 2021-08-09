@@ -7,8 +7,17 @@
 
 .arrayBar {
   width: 3px;
-  background-color: rgb(252, 167, 181);
+  background-color: pink;
   display: inline-block;
   margin: 0 2px;
   border: 1px solid black;
+}
+
+button {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+#buttonSection {
+  text-align: center;
 }

@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import './style.css';
 
-const Slider = () => {
+const Slider = ({ setSliderValue }) => {
     
-    const [sliderValue, setSliderValue ] = useState(0);
+    const [sliderValue, setChildSliderValue ] = useState(125);
 
     const changeValue = (e) => {
-        let newVal = e.value;
+        console.log(e);
+        let newVal = e.target.value;
+        setChildSliderValue(newVal);
         setSliderValue(newVal);
     }
 
 
     return (
-        <section class="slidecontainer">
-            <input oninput={changeValue} type="range" min="1" max="100" value="50" class="slider" id="myRange"/>
+        <div class="sliderContainer">
             <p>{sliderValue}</p>
-        </section>
+            <input class="slider" onChange={changeValue} type="range" min="50" max="200" value={sliderValue}></input>
+        </div> 
     )
 }
 

@@ -1,13 +1,17 @@
 import React from 'react';
-import Vizualizer from './components/SortingVisualizer';
+import { Switch, Route } from 'react-router-dom';
+import { SortingVisualizer } from './pages';
 
 
 function App() {
   return (
-    <main>
-      <h1 style={{"text-align": "center"}}>Sorting Vizualizer</h1>
-      <Vizualizer />
-    </main>
+    <>
+      <Switch>
+        <Route path="/">
+          <SortingVisualizer />
+        </Route>
+      </Switch>
+    </>
   );
 }
 
